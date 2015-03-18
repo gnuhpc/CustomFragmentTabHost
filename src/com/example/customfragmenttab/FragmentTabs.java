@@ -30,6 +30,7 @@ public class FragmentTabs extends FragmentActivity {
         
         TabWidget widget = mTabHost.getTabWidget();
 		for(int i=0; i < widget.getChildCount(); i++){
+			//custom indicator's color
 			widget.getChildAt(i).setBackgroundResource(R.drawable.apptheme_tab_indicator_holo);
 			TextView tv = (TextView) mTabHost.getTabWidget().getChildAt(i).findViewById(android.R.id.title);
 			tv.setTextColor(Color.BLUE);
